@@ -1,12 +1,3 @@
-"""
-Full faithful MixCombKL experiment (Bernoulli environments, mu ~ Uniform(0.1,0.9)^d per run)
-
-- Keeps algorithm/regret logic unchanged (KL updates, Sigma, wtilde, forced sampling Ut, R_super/R_base updates)
-- BernoulliMsetsEnv uses a sampled mu per run
-- run_alpha_sweep samples mu_all once (paired) so all alphas use same mu per run
-- Plots and summary tables included
-"""
-
 import numpy as np
 import itertools
 import time
@@ -563,3 +554,4 @@ if __name__ == "__main__":
         d=d, m=m, T=T, alphas=alphas, n_runs=n_runs, seeds_start=seed_start, report_every=report_every
     )
     print("All experiments done in {:.2f}s".format(time.time() - t_all))
+
