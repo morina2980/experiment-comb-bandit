@@ -1,20 +1,3 @@
-"""
-MixCombUCB – α sweep with μ ~ Uniform[0.1,0.9]^d (20 samples)
-
-For each α:
-    - 20 independent μ samples
-    - run MixCombUCB
-    - compute:
-        final regret
-        MSE_super
-        MSE_base
-        checkpoint regrets at 400,800,...,2000
-    - output average table per α
-    - plot averaged regret curves and MSE bars
-
-Faithful to your original logic; only adds MSE plotting.
-"""
-
 import numpy as np
 import itertools
 import matplotlib.pyplot as plt
@@ -312,3 +295,4 @@ if __name__ == "__main__":
         print(f"MSE_super  :   {r['mse_super_mean']:.3e} ± {r['mse_super_std']:.3e}")
         print(f"MSE_base   :   {r['mse_base_mean']:.3e} ± {r['mse_base_std']:.3e}")
         print(f"Checkpoints:   {np.round(r['checkpoints'],1)}")
+
