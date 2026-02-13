@@ -1,6 +1,6 @@
 # Introduction
 
-This repository includes the pytorch implementation of our combinatorial bandit experiment algorithm in our paper
+This repository includes the python implementation of our combinatorial bandit experiment algorithm in our paper
 
 [Adaptive Combinatorial Experimental Design:Pareto Optimality for Decision-Making and Inference] Hongrui Xie, Junyu Cao, Kan Xu, published in International Conference on Artificial Intelligence and Statistics, (AISTATS), 2026.
 
